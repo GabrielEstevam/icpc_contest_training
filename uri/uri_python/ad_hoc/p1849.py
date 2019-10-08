@@ -1,0 +1,7 @@
+entry = input().split(' ')
+a = int(entry[0])
+b = int(entry[1])
+c = int(entry[2])
+d = int(entry[3])
+m = max([min([a+c, b, d]), min([a+d, b, c]), min([b+c, a, d]), min([b+d, a, c]), min([a, b]), min([c, d])])
+print(m*m)
